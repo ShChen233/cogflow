@@ -325,22 +325,22 @@ Zeying Huang$^{2}$, Ning Zhang$^{2}$, Yi Sun$^{2}$, Yi Yang$^{1}$, Hangjie Yuan$
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
+<!-- <!-- Teaser video-->
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata"> -->
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+        <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
+      <!-- </video> -->
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+      <!-- </h2> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> --> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -352,7 +352,16 @@ Zeying Huang$^{2}$, Ning Zhang$^{2}$, Yi Sun$^{2}$, Yi Yang$^{1}$, Hangjie Yuan$
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Despite recent advances, multimodal large language models continue to struggle with visual mathematical problem solving.
+Some recent works recognize that visual perception is a bottleneck in visual mathematical reasoning, but their solutions are limited to improving the extraction and interpretation of visual inputs.
+Notably, they all ignore the key issue of whether the extracted visual cues are faithfully integrated and properly utilized in subsequent reasoning.
+Motivated by this, we present CogFlow, a novel cognitive-inspired three-stage framework that incorporates a knowledge internalization stage, explicitly simulating the hierarchical flow of human reasoning: perception$\Rightarrow$internalization$\Rightarrow$reasoning.
+In line with this hierarchical flow, we holistically enhance all its stages.
+We devise synergistic visual rewards to boost perception capabilities in parametric and semantic spaces, jointly improving visual information extraction from symbols and diagrams.
+To guarantee faithful integration of extracted visual cues into subsequent reasoning, we introduce a visual-anchored reward model in the internalization stage, bridging perception and reasoning.
+Moreover, we design a visual-gated policy optimization algorithm to further enforce the reasoning is grounded with the visual knowledge, preventing models seeking shortcuts that appear coherent but are visually ungrounded reasoning chains.
+Moreover, we contribute a new dataset MathCog for model training, which contains samples with over 120K high-quality perception-reasoning aligned annotations.
+Comprehensive experiments and analysis on three commonly used visual mathematical reasoning benchmarks validate the superiority of the proposed CogFlow.
           </p>
         </div>
       </div>
